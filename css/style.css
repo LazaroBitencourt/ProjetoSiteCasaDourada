@@ -8,6 +8,54 @@ html{
 body{
     background-color: #080B16;
 }
+#cabecalho{
+    background-color:black;
+    opacity: 0.994;
+    height: 90px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+}
+#imgLogoCasaDouradaHeader{
+    height: 88px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+nav{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:80px;
+}
+#menu{
+    color: white;
+    font-family:   Arial, sans-serif;
+    font-size: 22px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: clamp(12px,5vw,80px);
+
+}
+#botaoLogin{
+    width: 211px;
+    height: 44px;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    background-color: #F0B35B;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 70px;
+    margin-left: auto;
+    
+}
+
 #telaPrincipal{
     background-image: url("/img/imgTelaPrincipal.png");
     margin: 0;
@@ -23,6 +71,7 @@ body{
     display:flex;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 70px;
     width: 460px;
     padding-top: 180px;
 }
