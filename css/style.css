@@ -9,8 +9,8 @@ body{
     background-color: #080B16;
 }
 #cabecalho{
-    background-color:black;
-    opacity: 0.994;
+    background-color: #000000;
+    opacity: 0.70;
     height: 90px;
     width: 100vw;
     position: fixed;
@@ -27,7 +27,7 @@ body{
 nav{
     margin-top: auto;
     margin-bottom: auto;
-    margin-left:80px;
+    margin-left: clamp(12px,5vw,80px);
 }
 #menu{
     color: white;
@@ -38,11 +38,13 @@ nav{
     display: flex;
     flex-direction: row;
     gap: clamp(12px,5vw,80px);
-
+    margin-right: clamp(12px,5vw,80px);
 }
 #botaoLogin{
     width: 211px;
     height: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -53,7 +55,6 @@ nav{
     margin-bottom: auto;
     margin-right: 70px;
     margin-left: auto;
-    
 }
 
 #telaPrincipal{
@@ -61,7 +62,7 @@ nav{
     margin: 0;
     padding: 0;
     background-size: cover;       
-    background-position: center;  
+    background-position: top center;  
     background-repeat: no-repeat; 
     height: 100vh;                
     width: 100vw; 
@@ -85,5 +86,4 @@ nav{
     font-family:'Franklin Gothic Medium',  Arial, sans-serif;
     font-weight: bold;
     width: 60%;
-    
 }
