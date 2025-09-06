@@ -4,9 +4,14 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow: auto;
+    scrollbar-width: none;
 }
 body{
     background-color: #080B16;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 #cabecalho{
     background-color: #000000;
