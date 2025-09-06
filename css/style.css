@@ -77,18 +77,75 @@ nav{
     display:flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 70px;
+    margin-top: 0px;
     width: 460px;
-    padding-top: 180px;
+    padding-top: 210px;
 }
 #TextoTelaPrincipal{
     color: white;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
-    font-size: 40px;
+    font-size: clamp(0.5rem, 3vw, 40px);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     font-family:'Franklin Gothic Medium',  Arial, sans-serif;
     font-weight: bold;
     width: 60%;
+}
+#sobreRestaurante{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+}#informacoeSobreRestaurante{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+#tituloSobreRestaurante{
+    color: white;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: clamp(0.75rem, 2vw, 40px);
+    font-weight: bold;
+    text-align: left;
+}
+#textoSobreRestaurante{
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: clamp(0.69rem, 1vw, 25px);
+    text-align: justify;
+    margin-top:13%;
+    margin-right:10%;
+    width: 85%;
+    line-height: 1.6;
+    padding: 10PX;
+}
+#imagensPratos{
+    width: clamp(12px,50vw,650px);
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left:10%;
+    margin-right: 10%;
+}
+#pratos{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+}
+#sobremesa{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgreen;
+}
+#bebida{
+    height: 100vh;
+    width: 100vw;
+    background-color: magenta;
+}
+#rodape{
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
 }
