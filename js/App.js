@@ -5,9 +5,11 @@ const botaoFecharModalLogin = document.getElementById('botaoFecharModalLogin');
 const corpo = document.body;
 botaoAbrirModalLogin.onclick = ()=>{
     corpo.style.opacity = '0.3';
+    modalLogin.style.visibility = 'visible';
     modalLogin.showModal();
 }
 botaoFecharModalLogin.onclick = ()=>{
     modalLogin.close();
+    modalLogin.style.visibility = 'hidden';
     corpo.style.opacity = '1';
 }
