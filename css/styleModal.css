@@ -7,6 +7,7 @@ body{
     transition: opacity 0.6s ease;
 }
 #modal{
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     width: clamp(300px, 60%, 629px);
