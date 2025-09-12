@@ -64,22 +64,58 @@
         <section id="sobremesa"></section>
         <section id="bebidas"></section>
     </main>
-    <footer id="rodape"></footer>
+    <footer id="rodape">
 
+    </footer>
+        <div id="containerModais" style="visibility: hidden;">
+
+            <!--Modal -->
         <dialog id="modal">
             <form id="botaoFecharModal">
             <button id="botaoFecharModalLogin"><img src="/img/Botão fechar.png" alt="botao fechar"></button>
             </form>
             <img id="logoCasaDouradaModalLogin" src="/img/logoCasaDourada.png">
             <h2 id="tituloModal">Login</h2>
-            <form id="formularioLogin">
+            <form id="formulario">
                 <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
                 <input type="password" id="senha" name="senha" required placeholder="Digite ua Senha">
                 <button id="botaoLoginModal">Login</button>
-                <button id="botaoCadastrarModal">Cadastra-se</button>
+                <button id="botaoCadastrarUsuario">Cadastra-se</button>
             </form>
         </dialog>
 
+        <!--Modal Cadastro -->
+        <dialog id="modalCadastro">
+            <form id="botaoFecharModal">
+            <button id="botaoFecharModalLogin"><img src="/img/Botão fechar.png" alt="botao fechar"></button>
+            </form>
+            <img id="logoCasaDouradaModalLogin" src="/img/logoCasaDourada.png">
+            <h2 id="tituloModal">Cadastro</h2>
+            <form id="formulario">
+                <input type="email" id="email" name="email" required placeholder="Digite um e-mail">
+                <input type="password" id="senha" name="senha" required placeholder="Digite uma Senha">
+                <button id="botaoAvancarCadastro">Avançar</button>
+                <button id="botaoCadastrado">Já Possuo cadastro</button>
+            </form>
+        </dialog>
+
+        <!--Modal cadastro dados pessoais-->
+        <dialog id="modalCadastroDadosPessoais">
+            <form id="botaoFecharModal">
+            <button id="botaoFecharModalLogin"><img src="/img/Botão fechar.png" alt="botao fechar"></button>
+            </form>
+            <img id="logoCasaDouradaModalLogin" src="/img/logoCasaDourada.png">
+            <h2 id="tituloModal">Cadastro Dados Pessoais</h2>
+            <form id="formulario">
+                <input type="text" id="email" name="email" required placeholder="Digite seu nome completo">
+                <input type="text" id="senha" name="senha" required placeholder="Digite seu CPF">
+                <input type="text" id="email" name="email" required placeholder="Digite sua data de nascimento">
+                <input type="text" id="senha" name="senha" required placeholder="Digite seu telefone">
+                <button id="botaoaAvancarDadosPessoais">Avançar</button>
+                <button id="botaoVoltarCadastro">Voltar</button>
+            </form>
+        </dialog>
+        </div>
 </body>
 <script src="/js/App.js"></script>
 
