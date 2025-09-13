@@ -1,19 +1,22 @@
 //Função para abrir e fechar o modal de login
+
 const corpo = document.body;
 const botaoAbrirModalLogin = document.getElementById('botaoLogin');
 const modalLogin = document.getElementById('modal'); 
-const botaoFecharModalLogin = document.getElementById('botaoFecharModalLogin');
+const botaoFecharModal = document.getElementsByClassName('botaoFecharModal');
 botaoAbrirModalLogin.onclick = ()=>{
     corpo.style.opacity = '0.3';
     modalLogin.style.visibility = 'visible';
     modalLogin.showModal();
 }
-botaoFecharModalLogin.onclick = ()=>{
+botaoFecharModal.onclick = ()=>{
     modalLogin.close();
     modalLogin.style.visibility = 'hidden';
     corpo.style.opacity = '1';
 }
+
 //Função para abrir o modal de cadastro
+
 const botaoAbrirModalCadastro = document.getElementById('botaoCadastrarUsuario');
 const botaoJaCadastrado = document.getElementById('botaoCadastrado');
 const modalCadastro = document.getElementById('modalCadastro'); 
@@ -29,7 +32,9 @@ botaoJaCadastrado.onclick = ()=>{
     modalLogin.showModal();
     modalLogin.style.visibility = 'visible';
 }
+
 //Função para abrir  o modal de cadastro de dados pessoais
+
 const botaoAvancarCadastro = document.getElementById('botaoAvancarCadastro');
 const modalCadastroDadosPessoais = document.getElementById('modalCadastroDadosPessoais');
 const botaoVoltarCadastro = document.getElementById('botaoVoltarCadastro');
@@ -45,4 +50,46 @@ botaoVoltarCadastro.onclick = ()=>{
     modalCadastroDadosPessoais.style.visibility = 'hidden';
     modalCadastro.showModal();
     modalCadastro.style.visibility = 'visible';
+}
+
+//Função para abrir  o modal de cadastro de endereço
+const botaoAvancarCadastroEndereco = document.getElementById('botaoaAvancarCadastroEndereco');
+const modalCadastroEndereco = document.getElementById('modalCadastroEndereco');
+const botaoVoltarCadastroDadosPessoais = document.getElementById('botaoVoltarCadastroDadosPessoais');
+
+botaoAvancarCadastroEndereco.onclick = ()=>{
+    modalCadastroDadosPessoais.close();
+    modalCadastroDadosPessoais.style.visibility = 'hidden';
+    modalCadastroEndereco.showModal();
+    modalCadastroEndereco.style.visibility = 'visible';
+}
+botaoVoltarCadastroDadosPessoais.onclick = ()=>{
+    modalCadastroEndereco.close();
+    modalCadastroEndereco.style.visibility = 'hidden';
+    modalCadastroDadosPessoais.showModal();
+    modalCadastroDadosPessoais.style.visibility = 'visible';
+}
+
+//Função para abrir  o modal de finalizar cadastro
+
+const botaoAvancaFinalizarCadastro = document.getElementById('botaoAvancarFinalizarCadastro');
+const modalFinalizarCadastro = document.getElementById('modalFinalizaCadastro');
+const botaoFinalizarCadastro = document.getElementById('botaoFinalizarCadastro');
+const botaoVoltarCadastroEndereco = document.getElementById('botaoVoltarCadastroEndereco');
+
+botaoAvancaFinalizarCadastro.onclick = ()=>{
+    modalCadastroEndereco.close();
+    modalCadastroEndereco.style.visibility ='hidden';
+    modalFinalizarCadastro.showModal();
+    modalFinalizarCadastro.style.visibility = 'visible';
+}
+botaoFinalizarCadastro.onclick = ()=>{
+    modalFinalizarCadastro.close();
+    modalFinalizarCadastro.style.visibility ='hidden';
+}
+botaoVoltarCadastroEndereco.onclick = () =>{
+    modalFinalizarCadastro.close();
+    modalFinalizarCadastro.style.visibility ='hidden';
+    modalCadastroEndereco.showModal();
+    modalCadastroEndereco.style.visibility = 'visible';
 }

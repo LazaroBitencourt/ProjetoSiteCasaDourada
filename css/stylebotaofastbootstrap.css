@@ -1,0 +1,53 @@
+/* Estilo base para o container do switch - estilização do fastBootstrap*/
+.form-switch {
+  --bs-form-switch-width: 2.5em;
+  --bs-form-switch-height: 1.5em;
+  padding-left: calc(var(--bs-form-switch-width) + 0.5em);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinha horizontalmente à esquerda */
+  padding-left: 0;
+}
+
+/* Estilo do input tipo switch */
+.form-switch .form-check-input {
+  width: var(--bs-form-switch-width);
+  height: var(--bs-form-switch-height);
+  margin-left: -calc(var(--bs-form-switch-width) + 0.25em);
+  appearance: none;
+  background-color: rgb(206, 204, 204);
+  border-radius: var(--bs-form-switch-height);
+  position: relative;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Bolinha interna do switch */
+.form-switch .form-check-input::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(var(--bs-form-switch-height) - 4px);
+  height: calc(var(--bs-form-switch-height) - 4px);
+  background-color: black;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* Estado ativado (checked) */
+.form-switch .form-check-input:checked {
+  background-color: #F0B35B;
+}
+
+/* Move a bolinha para a direita quando ativado */
+.form-switch .form-check-input:checked::before {
+  transform: translateX(calc(var(--bs-form-switch-width) - var(--bs-form-switch-height)));
+}
+
+/* Estilo do texto ao lado do switch */
+.form-switch .form-check-label {
+  margin-left: 0.5em;
+  font-size: 1rem;
+  user-select: none;
+}
