@@ -256,11 +256,28 @@ background-color: black;
 #textoSobreSobremesa{
     margin-top: 15%;
 }
-#carrosselImagemSobremesa{
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
-    width: 800px;
-    background-color: red;
+
+
+/*estilo carrossel*/
+.meu-carrossel {
+  width: 800px;
+  height: 400px;
+  margin: 40px auto;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border: #F0B35B 1.5px solid;
+box-shadow: #F0B35B 0px 0px 40px;
+}
+
+.meu-carrossel .carousel-inner,
+.meu-carrossel .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.meu-carrossel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
