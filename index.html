@@ -34,6 +34,7 @@
             <p id="TextoTelaPrincipal">Venha viver o melhor da gastronomia no Casa Dourada.</p>
             <p id="TextoTelaPrincipal">Reserve já!</p>
         </section>
+
         <section id="sobreRestaurante">
             <img id="imagensPratos" src="/img/Grupo imagens.png" alt="Imagens de pratos">
             <div id="informacoesSobreRestaurante">
@@ -66,6 +67,7 @@
             </div>
             <div id="carrosselImagemPratos"></div>
         </section>
+
         <section id="sobremesa"></section>
         <section id="bebidas"></section>
     </main>
@@ -82,8 +84,8 @@
             <img id="logoCasaDouradaModalLogin" src="/img/logoCasaDourada.png">
             <h2 id="tituloModal">Login</h2>
             <form class="formulario">
-                <input type="email" class="campoEntradaDados" name="email" required placeholder="Digite seu e-mail">
-                <input type="password" class="campoEntradaDados" name="password" required placeholder="Digite ua Senha">
+                <input type="email" id="emailUsuario" class="campoEntradaDados" name="email" required placeholder="Digite seu e-mail">
+                <input type="password" id="senhaUsuario" class="campoEntradaDados" name="password" required placeholder="Digite ua Senha">
                 <button id="botaoModalLogin" class="botaoNavegacao">Login</button>
                 <button type="button" id="botaoCadastrarUsuario" class="botaoSemForma">Cadastra-se</button>
             </form>
@@ -161,7 +163,12 @@
             </div>
             </dialog>
 
-
+            <!--elemento Logado-->
+            <div id="containerLogado">
+            <span id="nomeUsuario"></span>
+            <button id="botaoConfigPerfilCabecalho"><img id="imgConfigPerfil" src="/img/imgConfigPerfil.png" alt=""></button>
+            </div>
+            
         </div>
         
 </body>
