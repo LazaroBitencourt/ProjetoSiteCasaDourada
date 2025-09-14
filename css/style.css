@@ -236,7 +236,36 @@ nav {
     width: 800px;
     background-color: red;
 }
-
+/*seção sobremesa by luisa fernanda*/
+#sobremesa{
+   height: 100vh;
+    width: 100vw;
+    padding: auto;
+    overflow: hidden;
+    justify-content: center;
+}
+#informacoesSobreSobremesa{
+  display: flex;
+  text-justify: center;
+  color: white;
+  font-family: Arial,sans-serif;
+  font-size: clamp(0.69rem, 1vw, 25px);
+  text-align: center;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#textoSobreSobremesa{
+    margin-top: 5%;
+}
+#carrosselImagemSobremesa{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 800px;
+    background-color: blue;
+}
 /*Rodape by Luisa Fernanda*/
 #rodape{
     background-color: #0D121E;
