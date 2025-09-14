@@ -266,6 +266,33 @@ nav {
     width: 800px;
     background-color: blue;
 }
+/*seção bebida by luisa fernanda*/
+#bebida{
+    height: 100vh;
+    width: 100vw;
+}
+#informacoesSobreBebida{
+  display: flex;
+  text-justify: center;
+  color: white;
+  font-family: Arial,sans-serif;
+  font-size: clamp(0.69rem, 1vw, 25px);
+  text-align: center;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}   
+#textoSobreBebida{
+    margin-top: 5%;
+}
+#carrosselImagemBebida{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 800px;
+    background-color: green;
+}
 
 /*Rodape by Luisa Fernanda*/
 #rodape{
