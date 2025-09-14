@@ -86,6 +86,7 @@ botaoAvancaFinalizarCadastro.onclick = ()=>{
 botaoFinalizarCadastro.onclick = ()=>{
     modalFinalizarCadastro.close();
     modalFinalizarCadastro.style.visibility ='hidden';
+    corpo.style.opacity = '1';
 }
 botaoVoltarCadastroEndereco.onclick = () =>{
     modalFinalizarCadastro.close();
