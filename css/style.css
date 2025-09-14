@@ -172,10 +172,6 @@ nav{
     height: 300px;
     width: 800px;
     background-color: red;
-}#sobremesa{
-    height: 100vh;
-    width: 100vw;
-    background-color: lightgreen;
 }
 #bebida{
     height: 100vh;
@@ -215,6 +211,8 @@ width: 60px;
 height: 15px;
 background-color: black;
 }
+
+/*tela Bebidas*/
 #bebidas{
     font-family: Arial, sans-serif;
     height: 100vh;
@@ -235,5 +233,34 @@ background-color: black;
     background-color: red;
     width: 800px;
     height: 300px;
-
+}
+/*tela sobremesas - seção sobremesa by luisa fernanda*/
+#sobremesa{
+   height: 100vh;
+    width: 100vw;
+    padding: auto;
+    overflow: hidden;
+    justify-content: center;
+}
+#informacoesSobreSobremesa{
+  display: flex;
+  text-justify: center;
+  color: white;
+  font-family: Arial,sans-serif;
+  font-size: clamp(0.69rem, 1vw, 25px);
+  text-align: center;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#textoSobreSobremesa{
+    margin-top: 15%;
+}
+#carrosselImagemSobremesa{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 800px;
+    background-color: red;
 }
