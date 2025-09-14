@@ -182,11 +182,6 @@ nav{
     width: 100vw;
     background-color: magenta;
 }
-#rodape{
-    height: 100vh;
-    width: 100vw;
-    background-color: blue;
-}
 
 /*header logado*/
 #containerLogado{
