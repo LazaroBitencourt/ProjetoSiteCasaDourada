@@ -94,3 +94,17 @@ botaoVoltarCadastroEndereco.onclick = () =>{
     modalCadastroEndereco.showModal();
     modalCadastroEndereco.style.visibility = 'visible';
 }
+
+//Função login de usuário
+ 
+var nomeUsuario = "Ana Paula"
+var emailUsuario = "anapaula@teste.com", senha = "123456";
+var emailUsuarioDigitado, senhaUsuarioDigitado; logado;
+
+const login = ()=>{
+emailUsuarioDigitado = document.getElementById('emailUsuario').value;
+senhaUsuarioDigitado = document.getElementById('senhaUsuario').value;
+if(emailUsuarioDigitado === emailUsuario && senhaUsuarioDigitado == senha){
+    
+}
+}
