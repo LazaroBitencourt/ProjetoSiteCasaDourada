@@ -187,3 +187,36 @@ nav{
     width: 100vw;
     background-color: blue;
 }
+
+/*header logado*/
+#containerLogado{
+    visibility: hidden;
+    width: 350px;
+    height: 44px;
+    padding: 10px;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #F0B35B;
+    background-color:black;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right:2%;
+    margin-left: auto;
+    overflow: hidden;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+}
+#botaoConfigPerfilCabecalho{
+    background-color: black;
+    border: none;
+}
+#imgConfigPerfil{
+width: 60px;
+height: 15px;
+background-color: black;
+}
