@@ -12,17 +12,26 @@
 </head>
 
 <body>
-    <header id="cabecalho">
-        <img id="imgLogoCasaDouradaHeader" src="/img/logoCasaDourada.png" alt="logo Casa Dourada">
-        <nav>
-            <ul id="menu">
-                <li id="home">Home</li>
-                <li id="contato">Contato</li>
-                <li id="servicos">Serviço</li>
-            </ul>
-        </nav>
-        <button id="botaoLogin">Login</button>
-    </header>
+   <header id="inicio">
+  <img id="imgLogoCasaDouradaHeader" src="/img/logoCasaDourada.png" alt="logo Casa Dourada">
+  <nav>
+    <ul id="menu">
+      <li><a href="#inicio">Home</a></li>
+      <li><a href="#rodape">Contato</a></li>
+      <li>
+        <a href="#servicos">Serviços</a>
+        <ul>
+          <li><a href="#">Agendar horário / reservar</a></li>
+          <li><a href="#">Cancelar ou reagendar horário</a></li>
+          <li><a href="#">Baixe nosso APP Casa Dourada</a></li>
+          <li><a href="#">Menu personalizado para eventos</a></li>
+          <li><a href="#">Atendimento para grupos ou empresas</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <button id="botaoLogin">Login</button>
+</header>
     <main>
         <section id="telaPrincipal">
             <img id="logoTelaPrincipal" src="/img/logoCasaDourada.png" alt="Logo Casa Dourada">
@@ -62,8 +71,23 @@
             </div>
             <div id="carrosselImagemPratos"></div>
         </section>
-        <section id="sobremesa"></section>
-        <section id="bebidas"></section>
+        <section id="sobremesa">
+            <div id="informacoesSobreSobremesa">
+            <p id="textoSobreSobremesa">
+        Pequenos capítulos de felicidade: nossas sobremesas são o final perfeito para transformar sua refeição em uma experiência memorável. 
+        Cada doce é uma celebração de sabores e texturas que encantam até o último respingo!
+            </p>
+            </div>
+            <div id="carrosselImagemSobremesa"></div>
+        </section>
+
+        <section id="bebidas">
+            <div id="informacoesSobreBebida">
+                <p id="textoSobreBebida">
+                    O sedredo está no equilibrio: drinks que bricam com os sentidos, vinhos que acarriciam a alma. Seu momento merece esse toque de perfeição.
+            </div>
+            <div id="carrosselImagemBebida"></div>
+        </section>
     </main>
     <footer id="rodape">
         <div class="footer-center footer-logo">

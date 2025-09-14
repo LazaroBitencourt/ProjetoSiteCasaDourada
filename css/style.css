@@ -13,7 +13,7 @@ body{
 body::-webkit-scrollbar {
   display: none;
 }
-#cabecalho{
+#inicio{
     background-color: #000000;
     opacity: 0.91;
     height: 90px;
@@ -37,7 +37,7 @@ nav{
 #menu{
     color: white;
     font-family:   Arial, sans-serif;
-    font-size: 22px;
+    font-size: 30px;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
     list-style: none;
     display: flex;
@@ -45,6 +45,69 @@ nav{
     gap: clamp(12px,5vw,80px);
     margin-right: clamp(12px,5vw,80px);
 }
+/*menu de serviços by fernanda*/
+nav {
+      background: #000;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    nav a{
+        color : white;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+    nav a:hover{
+        color: gold;
+        border-radius:  5px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav li ul{
+        top: 100%;
+        left: 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      padding: 0;
+    }
+    /* suspenso */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #111;
+      padding: 10px 0;
+      min-width: 300px; /* largura do menu suspenso */
+      list-style: none;
+      border-radius: 5px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.4); /* sombra dourada */
+      z-index: 999;
+    }
+    nav ul li ul li {
+      padding: 10px 10px;
+    }
+    nav ul li ul li a {
+        /*estilo dos icones do menu suspenso*/
+     color: #f5f5f5;
+     font-size: 16px;
+     font-family: Arial, Helvetica, sans-serif;
+     display: block;
+    }
+    nav ul li:hover ul {
+      display: block; /* Mostra o submenu quando passa o mouse */
+    }
+    nav ul li ul li a:hover {
+      color: gold;
+    }
 #botaoLogin{
     width: 211px;
     height: 44px;
@@ -172,15 +235,64 @@ nav{
     height: 300px;
     width: 800px;
     background-color: red;
-}#sobremesa{
-    height: 100vh;
-    width: 100vw;
-    background-color: lightgreen;
 }
+/*seção sobremesa by luisa fernanda*/
+#sobremesa{
+   height: 100vh;
+    width: 100vw;
+    padding: auto;
+    overflow: hidden;
+    justify-content: center;
+}
+#informacoesSobreSobremesa{
+  display: flex;
+  text-justify: center;
+  color: white;
+  font-family: Arial,sans-serif;
+  font-size: clamp(0.69rem, 1vw, 25px);
+  text-align: center;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#textoSobreSobremesa{
+    margin-top: 5%;
+}
+#carrosselImagemSobremesa{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 800px;
+    background-color: blue;
+}
+/*seção bebida by luisa fernanda*/
 #bebida{
     height: 100vh;
     width: 100vw;
     background-color: magenta;
+}
+#informacoesSobreBebida{
+  display: flex;
+  text-justify: center;
+  color: white;
+  font-family: Arial,sans-serif;
+  font-size: clamp(0.69rem, 1vw, 25px);
+  text-align: center;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}   
+#textoSobreBebida{
+    margin-top: 5%;
+}
+#carrosselImagemBebida{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 800px;
+    background-color: green;
 }
 /*Rodape by Luisa Fernanda*/
 #rodape{
