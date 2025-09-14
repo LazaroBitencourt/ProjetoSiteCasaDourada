@@ -7,10 +7,13 @@
     <title>Casa Dourada</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/styleModal.css">
+    <link rel="stylesheet" href="/css/stylebotaofastbootstrap.css">
     <link rel="shortcut icon" href="/img/logoCasaDourada.png" type="image/x-icon">
 </head>
 
 <body>
+
+    <!--Cabeçalho-->
     <header id="cabecalho">
         <img id="imgLogoCasaDouradaHeader" src="/img/logoCasaDourada.png" alt="logo Casa Dourada">
         <nav>
@@ -22,6 +25,8 @@
         </nav>
         <button id="botaoLogin">Login</button>
     </header>
+
+    <!--tela Principal-->
     <main>
         <section id="telaPrincipal">
             <img id="logoTelaPrincipal" src="/img/logoCasaDourada.png" alt="Logo Casa Dourada">
@@ -69,53 +74,96 @@
     </footer>
         <div id="containerModais" style="visibility: hidden;">
 
-            <!--Modal -->
+            <!--Modal login-->
         <dialog id="modal">
-            <form id="botaoFecharModal">
-            <button id="botaoFecharModalLogin"><img src="/img/Botão fechar.png" alt="botao fechar"></button>
+            <form class="ContainerBotaoFecharModal">
+            <button class="botaoFecharModal"><img src="/img/Botão fechar.png" alt="botao fechar"></button>
             </form>
             <img id="logoCasaDouradaModalLogin" src="/img/logoCasaDourada.png">
             <h2 id="tituloModal">Login</h2>
-            <form id="formulario">
-                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
-                <input type="password" id="senha" name="senha" required placeholder="Digite ua Senha">
-                <button id="botaoLoginModal">Login</button>
-                <button id="botaoCadastrarUsuario">Cadastra-se</button>
+            <form class="formulario">
+                <input type="email" class="campoEntradaDados" name="email" required placeholder="Digite seu e-mail">
+                <input type="password" class="campoEntradaDados" name="password" required placeholder="Digite ua Senha">
+                <button id="botaoModalLogin" class="botaoNavegacao">Login</button>
+                <button type="button" id="botaoCadastrarUsuario" class="botaoSemForma">Cadastra-se</button>
             </form>
         </dialog>
 
-        <!--Modal Cadastro -->
+        <!--Modal cadastro -->
         <dialog id="modalCadastro">
-            <form id="botaoFecharModal">
-            <button id="botaoFecharModalLogin"><img src="/img/Botão fechar.png" alt="botao fechar"></button>
+            <form class="ContainerBotaoFecharModal">
+            <button class="botaoFecharModal"><img src="/img/Botão fechar.png" alt="botao fechar"></button>
             </form>
             <img id="logoCasaDouradaModalLogin" src="/img/logoCasaDourada.png">
             <h2 id="tituloModal">Cadastro</h2>
-            <form id="formulario">
-                <input type="email" id="email" name="email" required placeholder="Digite um e-mail">
-                <input type="password" id="senha" name="senha" required placeholder="Digite uma Senha">
-                <button id="botaoAvancarCadastro">Avançar</button>
-                <button id="botaoCadastrado">Já Possuo cadastro</button>
+            <form class="formulario">
+                <input type="email" class="campoEntradaDados" name="email" required placeholder="Digite um e-mail">
+                <input type="password" class="campoEntradaDados" name="senha" required placeholder="Digite uma Senha">
+                <button id="botaoAvancarCadastro" class="botaoNavegacao">Avançar</button>
+                <button id="botaoCadastrado" class="botaoSemForma">Já possuo cadastro</button>
             </form>
         </dialog>
 
         <!--Modal cadastro dados pessoais-->
         <dialog id="modalCadastroDadosPessoais">
-            <form id="botaoFecharModal">
-            <button id="botaoFecharModalLogin"><img src="/img/Botão fechar.png" alt="botao fechar"></button>
+            <form class="ContainerBotaoFecharModal">
+            <button class="botaoFecharModal"><img src="/img/Botão fechar.png" alt="botao fechar"></button>
             </form>
             <img id="logoCasaDouradaModalLogin" src="/img/logoCasaDourada.png">
             <h2 id="tituloModal">Cadastro Dados Pessoais</h2>
-            <form id="formulario">
-                <input type="text" id="email" name="email" required placeholder="Digite seu nome completo">
-                <input type="text" id="senha" name="senha" required placeholder="Digite seu CPF">
-                <input type="text" id="email" name="email" required placeholder="Digite sua data de nascimento">
-                <input type="text" id="senha" name="senha" required placeholder="Digite seu telefone">
-                <button id="botaoaAvancarDadosPessoais">Avançar</button>
-                <button id="botaoVoltarCadastro">Voltar</button>
+            <form class="formulario">
+                <input type="text" class="campoEntradaDados" name="nome" required placeholder="Digite seu nome completo">
+                <input type="text" class="campoEntradaDados" name="cpf" required placeholder="Digite seu CPF">
+                <input type="text" class="campoEntradaDados" name="nascimento" required placeholder="Digite sua data de nascimento">
+                <input type="text" class="campoEntradaDados" name="telefone" required placeholder="Digite seu telefone">
+                <button id="botaoaAvancarCadastroEndereco" class="botaoNavegacao">Avançar</button>
+                <button id="botaoVoltarCadastro" class="botaoNavegacao">Voltar</button>
             </form>
         </dialog>
+
+        <!--Modal cadastro endereço-->
+        <dialog id="modalCadastroEndereco">
+            <form class="ContainerBotaoFecharModal">
+            <button class="botaoFecharModal"><img src="/img/Botão fechar.png" alt="botao fechar"></button>
+            </form>
+            <img id="logoCasaDouradaModalLogin" src="/img/logoCasaDourada.png">
+            <h2 id="tituloModal">Cadastro Endereço</h2>
+            <form class="formulario">
+                <input type="text" class="campoEntradaDados" name="logadouro" required placeholder="Digite seu logadouro">
+                <input type="text" class="campoEntradaDados" name="numero" required placeholder="Digite seu número">
+                <input type="text" class="campoEntradaDados" name="bairro" required placeholder="Digite seu bairro">
+                <input type="text" class="campoEntradaDados" name="CEP" required placeholder="Digite seu CEP">
+                <button id="botaoAvancarFinalizarCadastro" class="botaoNavegacao">Avançar</button>
+                <button id="botaoVoltarCadastroDadosPessoais" class="botaoNavegacao">Voltar</button>
+            </form>
+            </dialog>
+
+            <!--Modal finaliza cadastro-->
+            <dialog id="modalFinalizaCadastro">
+            <form class="ContainerBotaoFecharModal">
+            <button class="botaoFecharModal"><img src="/img/Botão fechar.png" alt="botao fechar"></button>
+            </form>
+            <img id="logoCasaDouradaModalLogin" src="/img/logoCasaDourada.png">
+            <div class="formulario">
+                <div id="botoesSwtich"> 
+                    <h2 id="tituloModalFinalizarCadastro">Finaliza cadastro</h2>
+                    <div class="form-check form-switch" style="--bs-form-switch-width:60px;--bs-form-switch-height:30px">
+                    <input class="form-check-input" type="checkbox" role="switch" id="switchSizeLargeChecked" checked />
+                    <label class="textoBotaoAceito" for="switchSizeLargeChecked">Aceito comunicações por e-mail ou SMS.</label>
+                        </div>
+                    <div class="form-check form-switch" style="--bs-form-switch-width:60px;--bs-form-switch-height:30px">
+                    <input class="form-check-input" type="checkbox" role="switch" id="switchSizeLargeChecked" checked />
+                    <label class="textoBotaoAceito" for="switchSizeLargeChecked">Aceito receber promoções por e-mail ou SMS.</label >
+                        </div>
+                </div>
+                <button id="botaoFinalizarCadastro" class="botaoNavegacao">Finalizar cadastro</button>
+                <button id="botaoVoltarCadastroEndereco" class="botaoNavegacao">Voltar</button>
+            </div>
+            </dialog>
+
+
         </div>
+        
 </body>
 <script src="/js/App.js"></script>
 
