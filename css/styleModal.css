@@ -1,12 +1,12 @@
 /*Estilização para modal Login*/
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+body {
     transition: opacity 0.6s ease;
 }
-#modal{
+#modal {
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -22,10 +22,10 @@ body{
     padding: 3px;
     scrollbar-width: none;
 }
-#logoCasaDouradaModalLogin{
-width: 300px;
+#logoCasaDouradaModalLogin {
+    width: 300px;
 }
-#tituloModal{
+#tituloModal {
     color: #F0B35B;
     font-size: 34px;
     font-family: Arial, sans-serif;
@@ -34,31 +34,31 @@ width: 300px;
     margin-left: 14%;
     margin-bottom: 22px;
 }
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     gap: 30px;
     justify-content: center;
     align-items: center;
 }
-.campoEntradaDados{
+.campoEntradaDados {
     width: 450px;
     height: 44px;
     font-size: 20px;
     border: none;
     outline: none;
-    padding-left:25px;
+    padding-left: 25px;
     text-align: left;
     box-sizing: border-box
 }
-.botaoNavegacao{
-    width:450px;
+.botaoNavegacao {
+    width: 450px;
     height: 44px;
     font-size: 20px;
     background-color: #F0B35B;
     font-weight: bold;
 }
-.botaoSemForma{
+.botaoSemForma {
     width: 250px;
     height: 44px;
     font-size: 20px;
@@ -67,7 +67,7 @@ width: 300px;
     border: none;
     font-weight: bold;
 }
-.ContainerBotaoFecharModal{
+.ContainerBotaoFecharModal {
     align-self: flex-end;
     border: none;
     width: 35px;
@@ -76,16 +76,14 @@ width: 300px;
     margin-top: 10px;
     margin-bottom: 8%;
 }
-.botaoFecharModal{
-    align-self: center; 
+.botaoFecharModal {
+    align-self: center;
     margin-bottom: 20px;
     background-color: black;
     border: none;
 }
-
 /*Estilização para modal cadastro*/
-
-#modalCadastro{
+#modalCadastro {
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -101,10 +99,8 @@ width: 300px;
     padding: 3px;
     scrollbar-width: none;
 }
-
 /*Estilização para modal cadastro dados pessoais*/
-
-#modalCadastroDadosPessoais{
+#modalCadastroDadosPessoais {
 
     visibility: hidden;
     display: flex;
@@ -121,10 +117,8 @@ width: 300px;
     padding: 3px;
     scrollbar-width: none;
 }
-
 /*Estilização para modal cadastro endereço*/
-
-#modalCadastroEndereco{
+#modalCadastroEndereco {
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -140,11 +134,8 @@ width: 300px;
     padding: 3px;
     scrollbar-width: none;
 }
-
-
 /*Estilização para modal finaliza cadastro*/
-
-#modalFinalizaCadastro{
+#modalFinalizaCadastro {
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -160,21 +151,22 @@ width: 300px;
     padding: 3px;
     scrollbar-width: none;
 }
-#botoesSwtich{
+#botoesSwtich {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     align-items: baseline;
     gap: 25px;
 }
-.textoBotaoAceito{
+.textoBotaoAceito {
     margin-left: 20px;
     font-size: 20px;
     color: #F0B35B;
     background-color: black;
     border: none;
     font-weight: bold;
-}#tituloModalFinalizarCadastro{
+}
+#tituloModalFinalizarCadastro {
     color: #F0B35B;
     font-size: 34px;
     font-family: Arial, sans-serif;
