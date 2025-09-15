@@ -5,10 +5,10 @@
   padding-left: calc(var(--bs-form-switch-width) + 0.5em);
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Alinha horizontalmente à esquerda */
+  justify-content: flex-start;
+  /* Alinha horizontalmente à esquerda */
   padding-left: 0;
 }
-
 /* Estilo do input tipo switch */
 .form-switch .form-check-input {
   width: var(--bs-form-switch-width);
@@ -21,7 +21,6 @@
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
-
 /* Bolinha interna do switch */
 .form-switch .form-check-input::before {
   content: "";
@@ -34,17 +33,14 @@
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
-
 /* Estado ativado (checked) */
 .form-switch .form-check-input:checked {
   background-color: #F0B35B;
 }
-
 /* Move a bolinha para a direita quando ativado */
 .form-switch .form-check-input:checked::before {
   transform: translateX(calc(var(--bs-form-switch-width) - var(--bs-form-switch-height)));
 }
-
 /* Estilo do texto ao lado do switch */
 .form-switch .form-check-label {
   margin-left: 0.5em;
